@@ -1,0 +1,62 @@
+@mixin ag-base {
+
+    body {
+        font-family: 'Forum', cursive;
+        background-image: url('../img/after-glow-hero-image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media only screen and (max-width: 768px) {
+            background-position: 50%;
+        }
+    }
+
+    .row-hero {
+        font-family: 'Petit Formal Script', cursive;
+        color: $white;
+
+        .page-heading {
+            margin-top: 60px;
+            font-size: 2em;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 1em !important;
+            }
+        }
+
+        .logo-tag {
+            float: right;
+            font-size: 3em;
+            margin-top: -15px;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 1em !important;
+            }
+        }
+
+        .logo-image {
+            margin-bottom: 0;
+        }
+
+        .site-tag {
+            font-family: 'Forum', cursive;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+            -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+            -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            @media only screen and (min-width: $navigation-threshold) {
+                margin-top: -40px;
+            }
+
+            @media only screen and (max-width: $navigation-threshold) {
+                clear:both;
+            }
+        }
+    }
+
+    .no-margin-bottom {
+        margin-bottom: 0;
+    }
+}

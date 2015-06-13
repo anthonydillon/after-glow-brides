@@ -1,0 +1,38 @@
+@mixin ag-header {
+  @media only screen and (min-width: $navigation-threshold) {
+    .banner {
+      position: absolute;
+      background: transparent;
+      border: 0;
+
+      .nav-primary ul {
+        display: flex;
+        width: 100%;
+
+        li {
+          border: 0;
+          flex-grow: 1;
+
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+
+      .nav-primary ul li a,
+      .nav-primary ul li a:link,
+      .nav-primary ul li a:visited {
+        border: 0;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+        -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+        -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
