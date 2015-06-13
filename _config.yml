@@ -2,7 +2,7 @@
 title: After Glow Brides
 email: mikaela@afterglowbrides.com
 description: Creators of luxury wedding films in the UK & abroad
-baseurl: "after-glow-brides" # the subpath of your site, e.g. /blog/
+baseurl: "/after-glow-brides" # the subpath of your site, e.g. /blog/
 url: "http://www.afterglowbrides.com" # the base hostname & protocol for your site
 github_username:  anthonydillon
 
