@@ -4,10 +4,13 @@
         font-family: 'Forum', cursive;
         background-image: url('../img/after-glow-hero-image.jpg');
         background-repeat: no-repeat;
-        background-size: cover;
+
+        @media only screen and (min-width: 768px) {
+            background-size: cover;
+        }
 
         @media only screen and (max-width: 768px) {
-            background-position: 50%;
+            background-position: center 0;
         }
     }
 
@@ -16,7 +19,7 @@
         color: $white;
 
         .page-heading {
-            margin-top: 60px;
+            margin-top: 20px;
             font-size: 2em;
 
             @media only screen and (max-width: 768px) {
@@ -28,9 +31,8 @@
             float: right;
             font-size: 3em;
             margin-top: -15px;
-
-            @media only screen and (max-width: 768px) {
-                margin-bottom: 1em !important;
+            @media only screen and (max-width: $breakpoint-medium) {
+                margin-bottom: 50px !important;
             }
         }
 
@@ -46,11 +48,11 @@
             text-transform: uppercase;
             letter-spacing: 1px;
 
-            @media only screen and (min-width: $navigation-threshold) {
+            @media only screen and (min-width: $breakpoint-medium) {
                 margin-top: -40px;
             }
 
-            @media only screen and (max-width: $navigation-threshold) {
+            @media only screen and (max-width: $breakpoint-medium) {
                 clear:both;
             }
         }
@@ -58,5 +60,9 @@
 
     .no-margin-bottom {
         margin-bottom: 0;
+    }
+
+    .row br {
+        display: block;
     }
 }

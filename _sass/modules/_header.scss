@@ -1,20 +1,24 @@
 @mixin ag-header {
   @media only screen and (min-width: $navigation-threshold) {
     .banner {
-      position: absolute;
-      background: transparent;
+      background: rgba(255, 255, 255, .5);
       border: 0;
 
-      .nav-primary ul {
-        display: flex;
-        width: 100%;
+      .nav-primary{
+        max-width: $site-max-width;
+        width: auto;
+        
+        ul {
+          display: flex;
+          width: 100%;
 
-        li {
-          border: 0;
-          flex-grow: 1;
+          li {
+            border: 0;
+            flex-grow: 0;
 
-          &:last-child {
-            border-right: 0;
+            &:last-child {
+              border-right: 0;
+            }
           }
         }
       }
@@ -22,6 +26,7 @@
       .nav-primary ul li a,
       .nav-primary ul li a:link,
       .nav-primary ul li a:visited {
+        transition: all .3s;
         border: 0;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
         -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
@@ -29,8 +34,12 @@
         text-transform: uppercase;
         letter-spacing: 1px;
 
+        &.active {
+          background: rgba(255, 255, 255, 0.75);
+        }
+
         &:hover {
-          background: transparent;
+          background: rgba(255, 255, 255, 0.75);
         }
       }
     }

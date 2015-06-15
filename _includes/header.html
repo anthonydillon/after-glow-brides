@@ -4,14 +4,17 @@
                 <a href="#main-navigation">Jump to site nav</a>
             </span>
             <ul>
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/creators">Creators</a></li>
-                <li><a href="{{ site.baseurl }}/latest">Latest</a></li>
-                <li><a href="{{ site.baseurl }}/gallery">Gallery</a></li>
-                <li><a href="{{ site.baseurl }}/clients">Clients</a></li>
-                <li><a href="{{ site.baseurl }}/testimonials">Testimonials</a></li>
-                <li><a href="{{ site.baseurl }}/partners">Partners</a></li>
-                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+              {% for link in site.navigation %}
+                {% assign current = nil %}
+                {% assign url = page.url|remove:'index.html' %}
+                {% if url == link.url or page.layout == link.layout %}
+                  {% assign current = 'active' %}
+                {% endif %}
+
+                <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                  <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+              {% endfor %}
             </ul>
         </nav>
         <div class="nav-toggle">
