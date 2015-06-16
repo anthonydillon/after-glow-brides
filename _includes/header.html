@@ -3,7 +3,7 @@
             <span id="main-navigation-link">
                 <a href="#main-navigation">Jump to site nav</a>
             </span>
-            <ul>
+            <!--<ul>
               {% for link in site.navigation %}
                 {% assign current = nil %}
                 {% assign url = page.url|remove:'index.html' %}
@@ -15,6 +15,17 @@
                   <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
                 </li>
               {% endfor %}
+            </ul>-->
+
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/creators">Creators</a></li>
+                <li><a href="{{ site.baseurl }}/latest">Latest</a></li>
+                <li><a href="{{ site.baseurl }}/gallery">Gallery</a></li>
+                <li><a href="{{ site.baseurl }}/clients">Clients</a></li>
+                <li><a href="{{ site.baseurl }}/testimonials">Testimonials</a></li>
+                <li><a href="{{ site.baseurl }}/partners">Partners</a></li>
+                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
             </ul>
         </nav>
         <div class="nav-toggle">
