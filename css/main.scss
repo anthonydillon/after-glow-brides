@@ -12,10 +12,12 @@ $brand-color: #FF5722;
 		"../node_modules/vanilla-framework/scss/build",
 		"base",
 		"modules/header",
-		"modules/box"
+		"modules/box",
+		"modules/slick"
 ;
 
 @include vanilla;
 @include ag-base;
 @include ag-header;
 @include ag-box;
+@include ag-slick;

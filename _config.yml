@@ -12,6 +12,10 @@ navigation:
   url: /about/
 - text: Creators
   url: /creators/
+- text: Latest
+  url: /latest/
+- text: Gallery
+  url: /gallery/
 - text: Contact
   url: /contact/
 
