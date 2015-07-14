@@ -1,0 +1,17 @@
+@mixin ag-testimonials {
+  .testimonials-page {
+    .page-content {
+      p {
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin-top: 2em;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

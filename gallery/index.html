@@ -2,23 +2,56 @@
 layout: default
 bodyclass: gallery-page
 ---
-
+<div class="slider single-item">
+  <div><img src="{{ site.baseurl }}/img/gallery/gallery_1.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/gallery/gallery_2.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/gallery/gallery_3.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/gallery/gallery_4.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/gallery/gallery_5.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/gallery/gallery_6.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/gallery/gallery_7.jpg" alt="" /></div>
+</div>
 <div class="row no-border">
   <div class="inner-wrapper">
-    <aside class="three-col append-one">
+    <aside class="three-col append-one box">
       <img src="{{ site.baseurl }}/img/afterglow-logo.gif" alt="" />
       <span class="logo-tag">Brides</span>
       <h2 class="logo__page-title">Gallery</h2>
     </aside>
 
-    <div class="eight-col last-col">
+    <!-- <div class="eight-col last-col">
       <div class="slider single-item">
-        <div><img src="{{ site.baseurl }}/img/creators.jpg" alt="" /></div>
-        <div><img src="{{ site.baseurl }}/img/creators.jpg" alt="" /></div>
-        <div><img src="{{ site.baseurl }}/img/creators.jpg" alt="" /></div>
-        <div><img src="{{ site.baseurl }}/img/creators.jpg" alt="" /></div>
-        <div><img src="{{ site.baseurl }}/img/creators.jpg" alt="" /></div>
+        <div><img src="{{ site.baseurl }}/img/gallery/gallery_1.jpg" alt="" /></div>
+        <div><img src="{{ site.baseurl }}/img/gallery/gallery_2.jpg" alt="" /></div>
+        <div><img src="{{ site.baseurl }}/img/gallery/gallery_3.jpg" alt="" /></div>
+        <div><img src="{{ site.baseurl }}/img/gallery/gallery_4.jpg" alt="" /></div>
+        <div><img src="{{ site.baseurl }}/img/gallery/gallery_5.jpg" alt="" /></div>
+        <div><img src="{{ site.baseurl }}/img/gallery/gallery_6.jpg" alt="" /></div>
+        <div><img src="{{ site.baseurl }}/img/gallery/gallery_7.jpg" alt="" /></div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
+
+<script>
+  $('.single-item').slick();
+</script>
+
+<style>
+  .slick-track {
+    margin-bottom: -20px;
+  }
+  @media only screen and (min-width: 786px) {
+    .single-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  .single-item img {
+    width: 100%;
+  }
+</style>

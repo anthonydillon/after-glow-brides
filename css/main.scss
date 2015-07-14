@@ -13,7 +13,8 @@ $brand-color: #FF5722;
 		"base",
 		"modules/header",
 		"modules/box",
-		"modules/slick"
+		"modules/slick",
+		"pages/testimonials-page"
 ;
 
 @include vanilla;
@@ -21,3 +22,4 @@ $brand-color: #FF5722;
 @include ag-header;
 @include ag-box;
 @include ag-slick;
+@include ag-testimonials;

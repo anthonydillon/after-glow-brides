@@ -16,6 +16,10 @@ navigation:
   url: /latest/
 - text: Gallery
   url: /gallery/
+- text: Clients
+  url: /clients/
+- text: Testimonials
+  url: /testimonials/
 - text: Contact
   url: /contact/
 
