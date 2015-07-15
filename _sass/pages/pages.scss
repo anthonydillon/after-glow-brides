@@ -1,6 +1,8 @@
-@mixin ag-testimonials {
+@mixin ag-pages {
   .testimonials-page {
     .page-content {
+        margin-top: 12%;
+
       p {
         text-transform: uppercase;
       }
@@ -13,5 +15,14 @@
         }
       }
     }
+  }
+
+  .about-page,
+  .creators-page,
+  .latest-page,
+  .contact-page {
+      .page-content {
+          margin-top: 12%;
+      }
   }
 }

@@ -10,11 +10,14 @@ bodyclass: contact-page
       <span class="logo-tag">Brides</span>
       <h2 class="logo__page-title">About</h2>
     </aside>
-    <div class="eight-col">
+    <div class="eight-col page-content">
       <div class="four-col">
         <form action="http://formspree.io/anthony_dillon@hotmail.com" method="POST">
           <label><h4>Name:</h4> <input type="text" name="name" required></label><br />
           <label><h4>Contact phone:</h4> <input type="tel" name="phone" required></label><br />
+          <label><h4>Email address:</h4> <input type="email" name="email" required></label><br />
+          <label><h4>Proposed wedding date:</h4> <input type="text" name="wedding-date" placeholder="DD/MM/YYYY" required></label><br />
+          <label><h4>Town and Country of wedding:</h4> <input type="text" name="wedding-address" required></label><br />
           <label><h4>Questions:</h4> <textarea name="questions" required></textarea></label><br />
           <input type="submit" value="Send">
         </form>

@@ -1,0 +1,16 @@
+@mixin ag-client {
+    .client {
+        text-align: center;
+        position: relative;
+
+        &__name {
+            position: absolute;
+            top: 45px;
+            text-transform: uppercase;
+            z-index: 2;
+            width: 100%;
+            font-weight: 700;
+            color: $text-color;
+        }
+    }
+}
