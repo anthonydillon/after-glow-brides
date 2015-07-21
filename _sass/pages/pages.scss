@@ -17,10 +17,34 @@
     }
   }
 
+  .home-page {
+      background-image: url('../img/after-glow-hero-image.jpg');
+      background-repeat: no-repeat;
+      height: 100%;
+      display: block;
+      width: 100%;
+      position: absolute;
+
+      @media only screen and (min-width: 768px) {
+          background-size: cover;
+      }
+
+      @media only screen and (max-width: 768px) {
+          background-position: center 0;
+      }
+
+      @media only screen and (min-width: 1800px) {
+        .hero-logo {
+            margin-top: 20%;
+        }
+      }
+  }
+
   .about-page,
   .creators-page,
   .latest-page,
-  .contact-page {
+  .contact-page,
+  .clients-page {
       .page-content {
           margin-top: 12%;
       }

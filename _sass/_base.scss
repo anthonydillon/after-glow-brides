@@ -4,21 +4,8 @@
         font-family: 'Forum', cursive;
     }
 
-    body.home-page {
-      background-image: url('../img/after-glow-hero-image.jpg');
-      background-repeat: no-repeat;
-
-      @media only screen and (min-width: 768px) {
-          background-size: cover;
-      }
-
-      @media only screen and (max-width: 768px) {
-          background-position: center 0;
-      }
-    }
-
     .inner-wrapper {
-        max-width: 1300px;
+        max-width: $site-max-width;
     }
 
     .row-hero {
@@ -68,9 +55,11 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 0;
+            position: relative;
+            top: -2.6em;
 
             p {
-                font-size: 1.2em;
+                font-size: 1.4em;
             }
 
             @media only screen and (max-width: $breakpoint-medium) {

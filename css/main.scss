@@ -3,14 +3,11 @@
 ---
 @charset "utf-8";
 
-$header-link-color: #000;
-$navigation-threshold: 1030px;
-$brand-color: #FF5722;
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 		"../node_modules/vanilla-framework/scss/build",
 		"base",
+		"global-settings",
 		"modules/header",
 		"modules/box",
 		"modules/slick",
