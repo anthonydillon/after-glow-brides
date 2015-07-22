@@ -180,17 +180,12 @@
 
     .slick-prev
     {
-        left: 30px;
-        background: url("../img/slider-arrow-left-white.png");
-        width: 44px;
-        height: 64px;
+        left: 0;
+        top: 60px;
+        cursor: url("../img/slider-arrow-left-white.png"), auto;
+        width: 50%;
+        height: 90%;
         text-indent: -3000px;
-        opacity: .8;
-
-        &:hover {
-          background: url("../img/slider-arrow-left-white.png");
-          opacity: 1;
-        }
     }
     [dir='rtl'] .slick-prev
     {
@@ -208,17 +203,12 @@
 
     .slick-next
     {
-        right: 30px;
-        background: url("../img/slider-arrow-right-white.png");
-        width: 44px;
-        height: 64px;
+        right: 0;
+        top: 60px;
+        cursor: url("../img/slider-arrow-right-white.png"), auto;
+        width: 50%;
+        height: 90%;
         text-indent: -3000px;
-        opacity: .8;
-
-        &:hover {
-          background: url("../img/slider-arrow-right-white.png");
-          opacity: 1;
-        }
     }
     [dir='rtl'] .slick-next
     {
