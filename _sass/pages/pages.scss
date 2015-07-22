@@ -40,13 +40,21 @@
       }
   }
 
-  .about-page,
-  .creators-page,
-  .latest-page,
-  .contact-page,
-  .clients-page {
-      .page-content {
-          margin-top: 12%;
+  .page-content {
+      margin-top: 12%;
+  }
+
+  .gallery-page {
+      .box {
+          position: absolute;
+          left: 4%;
+          width: 400px;
+      }
+  }
+
+  .contact-page {
+      a {
+          color: $brand-color;
       }
   }
 }
