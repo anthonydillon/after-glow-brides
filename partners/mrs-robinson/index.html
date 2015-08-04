@@ -1,0 +1,47 @@
+---
+layout: default
+bodyclass: clients-page
+---
+
+<div class="row no-border">
+  <div class="inner-wrapper">
+    <aside class="three-col">
+      <img src="{{ site.baseurl }}/img/afterglow-logo.gif" alt="" />
+      <span class="logo-tag">Brides</span>
+      <h2 class="logo__page-title">Mrs Robinson</h2>
+      <p class="logo__page-text">Founders, Rebi &amp; Fleur have worked tirelessly, assisting us with development of the brand. In our opinion, they are the most exciting model agency to arrive on the fashion scene in the modern era.</p>
+    </aside>
+
+    <div class="nine-col last-col page-content">
+        <div class="slider single-item">
+            <div>
+                <img src="{{ site.baseurl }}/img/partners/mrs-robinson/1.jpg" alt="" class="client__image">
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('.single-item').slick();
+</script>
+
+<style>
+  .slick-track {
+    margin-bottom: -20px;
+  }
+  @media only screen and (min-width: 786px) {
+    .single-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  .single-item img {
+    width: 100%;
+  }
+</style>

@@ -18,6 +18,8 @@ navigation:
   url: /gallery/
 - text: Clients
   url: /clients/
+- text: Partners
+  url: /partners/
 - text: Testimonials
   url: /testimonials/
 - text: Contact

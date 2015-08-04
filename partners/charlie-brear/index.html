@@ -1,0 +1,56 @@
+---
+layout: default
+bodyclass: clients-page
+---
+
+<div class="row no-border">
+  <div class="inner-wrapper">
+    <aside class="three-col">
+      <img src="{{ site.baseurl }}/img/afterglow-logo.gif" alt="" />
+      <span class="logo-tag">Brides</span>
+      <h2 class="logo__page-title">Charlie Brear</h2>
+      <p class="logo__page-text">Charlie Brear has supported us from the outset &mdash; loaning us their beautiful wedding gowns for our gallery shoots out on location. Thank you, Jessica!</p>
+    </aside>
+
+    <div class="nine-col last-col page-content">
+        <div class="slider single-item">
+            <div>
+                <img src="{{ site.baseurl }}/img/partners/charlie-brear/1.png" alt="" class="client__image">
+            </div>
+            <div>
+                <img src="{{ site.baseurl }}/img/partners/charlie-brear/2.png" alt="" class="client__image">
+            </div>
+            <div>
+                <img src="{{ site.baseurl }}/img/partners/charlie-brear/3.png" alt="" class="client__image">
+            </div>
+            <div>
+                <img src="{{ site.baseurl }}/img/partners/charlie-brear/4.png" alt="" class="client__image">
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('.single-item').slick();
+</script>
+
+<style>
+  .slick-track {
+    margin-bottom: -20px;
+  }
+  @media only screen and (min-width: 786px) {
+    .single-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  .single-item img {
+    width: 100%;
+  }
+</style>

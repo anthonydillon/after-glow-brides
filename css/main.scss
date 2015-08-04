@@ -12,6 +12,7 @@
 		"modules/box",
 		"modules/slick",
 		"modules/clients",
+		"modules/_inline-logos",
 		"pages/pages"
 ;
 
@@ -22,3 +23,4 @@
 @include ag-client;
 @include ag-slick;
 @include ag-pages;
+@include ag-inline-logos;
