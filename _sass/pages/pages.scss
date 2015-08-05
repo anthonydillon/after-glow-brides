@@ -45,10 +45,16 @@
   }
 
   .gallery-page {
+    @media only screen and (min-width: 768px) {
       .box {
           position: absolute;
           left: 4%;
           width: 200px;
+      }
+    }
+
+      aside {
+        z-index: 100;
       }
   }
 
@@ -56,5 +62,27 @@
       a {
           color: $brand-color;
       }
+  }
+
+  .clients-page {
+    .close-icon {
+      position: absolute;
+      right: 0;
+      top: -100px;
+
+      img {
+        width: 38px;
+        height: 38px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+
+      @media only screen and (max-height: $site-max-width) {
+        top: -65px;
+      }
+
+    }
   }
 }
