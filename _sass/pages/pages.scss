@@ -85,4 +85,37 @@
 
     }
   }
+
+  .bios-page {
+    background: url('../img/bios.jpg') no-repeat;
+    background-size: cover;
+
+    aside {
+      background: rgba(255, 255, 255, .5);
+      margin-top: 50px;
+
+    }
+
+    .bio {
+      color: white;
+    }
+
+    .inner-wrapper {
+      max-width: 2100px;
+    }
+
+    .bio-name {
+      text-transform: uppercase;
+      font-size: 1.5em;
+    }
+
+    .chris-bio {
+      margin-top: 20%;
+      margin-bottom: 0;
+      @media only screen and (max-width: 1500px) {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
