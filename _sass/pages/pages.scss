@@ -53,13 +53,21 @@
       }
     }
 
-      aside {
-        z-index: 100;
+    .florence-front-page {
+      font-family: 'Petit Formal Script', cursive;
+      color: #3f301f;
+      position: absolute;
+      top: 140px;
+      z-index: 1000;
+      margin-left: 80px;
+    }
 
-        .logo-tag {
-          margin-top: -20px;
-        }
-      }
+    .florence-end-page {
+      position: absolute;
+      bottom: 170px;
+      margin-left: 80px;
+      font-size: 1.4em;
+    }
   }
 
   .contact-page {
