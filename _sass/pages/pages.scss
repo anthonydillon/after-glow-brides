@@ -62,6 +62,49 @@
       margin-left: 80px;
     }
 
+    .solitaire-front-page {
+        font-family: 'Petit Formal Script', cursive;
+        color: #ffffff;
+        position: absolute;
+        top: 60%;
+        z-index: 1000;
+        margin-left: 80px;
+    }
+
+    .solitaure-back-page {
+      color:  #3f301f;
+      position: absolute;
+      top: 297px;
+      z-index: 1000;
+      float: right;
+      margin-left: 4.3%;
+
+      h1 {
+          font-family: 'Petit Formal Script', cursive;
+      }
+    }
+
+    .button__play {
+      margin: -40% auto;
+      display: block;
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        opacity: .6;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &.florence {
+        margin-top: -30%;
+      }
+    }
+
     .florence-end-page {
       position: absolute;
       bottom: 170px;
