@@ -84,7 +84,8 @@
       }
     }
 
-    .button__play {
+    .button__play--solitaire,
+    .button__play--florence {
       margin: -40% auto;
       display: block;
       width: 40px;
@@ -99,15 +100,39 @@
           opacity: 1;
         }
       }
+    }
 
-      &.florence {
-        margin-top: -30%;
+    .button__play--florence {
+      margin-top: -30%;
+    }
+
+    .video-container--solitaire,
+    .video-container--florence {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20000;
+      background-color: rgba(0,0,0,.5);
+      cursor: pointer;
+
+      iframe {
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 48%;
+      }
+
+      &.is-visible {
+        display: block;
       }
     }
 
     .florence-end-page {
       position: absolute;
-      bottom: 170px;
+      margin-top: -27%;
       margin-left: 80px;
       font-size: 1.4em;
     }
