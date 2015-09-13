@@ -3,7 +3,8 @@
         text-align: center;
         position: relative;
 
-        &__name {
+        &__name,
+        &__name--white {
             position: absolute;
             top: 45px;
             text-transform: uppercase;
@@ -11,6 +12,10 @@
             width: 100%;
             font-weight: 700;
             color: $text-color;
+        }
+
+        &__name--white {
+            color: #fff;
         }
     }
 }
