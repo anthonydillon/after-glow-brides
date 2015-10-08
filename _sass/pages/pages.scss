@@ -52,6 +52,29 @@
       margin-top: 12%;
   }
 
+  .button__play,
+  .button__play--solitaire,
+  .button__play--florence {
+    margin: -40% auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      opacity: .6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .button__play--florence {
+    margin-top: -30%;
+  }
+
   .gallery-page {
     @media only screen and (min-width: 768px) {
       .box {
@@ -90,28 +113,6 @@
       h1 {
           font-family: 'Petit Formal Script', cursive;
       }
-    }
-
-    .button__play--solitaire,
-    .button__play--florence {
-      margin: -40% auto;
-      display: block;
-      width: 40px;
-      height: 40px;
-
-      img {
-        width: 40px;
-        height: 40px;
-        opacity: .6;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
-    }
-
-    .button__play--florence {
-      margin-top: -30%;
     }
 
     .video-container--solitaire,
