@@ -1,23 +1,21 @@
 # Site settings
 title: After Glow Brides
 email: mikaela@afterglowbrides.com
-description: Creators of luxury wedding films & photography in the UK & worldwide
+description: EXCEPTIONAL BEAUTY GROOMING, LUXURY WEDDING FILMS & PHOTOGRAPHY IN THE UK & WORLDWIDE
 baseurl: "/after-glow-brides" # the subpath of your site, e.g. /blog/
 url: "http://www.afterglowbrides.com" # the base hostname & protocol for your site
 github_username:  afterglowbrides
 navigation:
 - text: Home
   url: /
-- text: About
-  url: /about/
 - text: Creators
   url: /creators/
 - text: Latest
   url: /latest/
-- text: Gallery
-  url: /gallery/
-- text: Clients
-  url: /clients/
+- text: Weddings
+  url: /weddings/
+- text: Editorial
+  url: /editorial/
 - text: Testimonials
   url: /testimonials/
 - text: Partners

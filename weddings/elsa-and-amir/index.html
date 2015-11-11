@@ -13,7 +13,7 @@ bodyclass: clients-page
 
     <div class="nine-col last-col page-content">
         <div class="close-icon">
-          <a href="{{ site.baseurl }}/clients">
+          <a href="{{ site.baseurl }}/weddings">
             <img src="{{ site.baseurl }}/img/icon_site_close_black.png" alt="" />
           </a>
         </div>
@@ -38,6 +38,26 @@ bodyclass: clients-page
                 <a href="https://vimeo.com/122905498" class="button__play--florence" target="_blank">
                   <img src="/img/play-button.png" alt="">
                 </a>
+                <div class="video-container video-container--florence">
+                  <iframe width="560" height="315" src="https://player.vimeo.com/video/122905498" class="elsa-and-amir-video" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <script>
+                  $(document).ready(function(e) {
+                    $('.button__play--florence').click(function(e){
+                      e.preventDefault();
+                      $('.video-container--florence').addClass('is-visible');
+                      $('.slick-next').hide();
+                      $('.slick-prev').hide();
+                    });
+
+                    $('.video-container--florence').click(function(e) {
+                      e.preventDefault();
+                      $('.video-container--florence').removeClass('is-visible');
+                      $('.slick-next').show();
+                      $('.slick-prev').show();
+                    });
+                  });
+                </script>
             </div>
         </div>
     </div>
