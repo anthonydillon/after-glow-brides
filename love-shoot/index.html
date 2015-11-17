@@ -3,16 +3,33 @@ layout: default
 bodyclass: loveshoot-page
 ---
 
-<div class="row no-border">
-  <div class="inner-wrapper">
-    <aside class="three-col">
-      <img src="{{ site.baseurl }}/img/afterglow-logo.gif" alt="" />
-      <span class="logo-tag">Brides</span>
-      <h2 class="logo__page-title">Love shoot</h2>
-    </aside>
 
-    <div class="nine-col last-col page-content">
-      
-    </div>
-  </div>
+<div class="slider single-item">
+  <div><img src="{{ site.baseurl }}/img/love-shoot/a1.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/love-shoot/a2.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/love-shoot/a3.jpg" alt="" /></div>
+  <div><img src="{{ site.baseurl }}/img/love-shoot/a4.jpg" alt="" /></div>
 </div>
+
+<script>
+  $('.single-item').slick();
+</script>
+
+<style>
+  .slick-track {
+    margin-bottom: -20px;
+  }
+  @media only screen and (min-width: 786px) {
+    .single-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  .single-item img {
+    width: 100%;
+  }
+</style>
