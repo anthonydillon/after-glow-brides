@@ -89,10 +89,10 @@
     cursor: pointer;
 
     iframe {
-      top: 25%;
-      left: 25%;
-      width: 50%;
-      height: 48%;
+      top: 10%;
+      left: 10%;
+      width: 80%;
+      height: 77%;
     }
 
     &.is-visible {
@@ -164,6 +164,12 @@
       background-color: rgba(255, 255, 255, 0.7);
       top: -40px;
       padding: 10px;
+    }
+
+    @media only screen and (min-width: $site-max-width) {
+      .inline-logos li {
+        width: 35%;
+      }
     }
 
   }
